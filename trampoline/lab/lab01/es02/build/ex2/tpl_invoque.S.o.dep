@@ -1,0 +1,22 @@
+build/ex2/tpl_invoque.S.o: ex2/tpl_invoque.S \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_application_def.h \
+ ex2/tpl_app_define.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h \
+ ex2/tpl_service_ids.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_assembler.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_as_memmap.h
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_application_def.h:
+
+ex2/tpl_app_define.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h:
+
+ex2/tpl_service_ids.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_assembler.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_as_memmap.h:

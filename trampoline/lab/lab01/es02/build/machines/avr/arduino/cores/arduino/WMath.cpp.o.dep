@@ -1,0 +1,8 @@
+build/machines/avr/arduino/cores/arduino/WMath.cpp.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/WMath.cpp \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h:

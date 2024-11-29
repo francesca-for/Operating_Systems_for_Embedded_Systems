@@ -1,0 +1,2 @@
+build/machines/avr/arduino/cores/arduino/hooks.c.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/hooks.c

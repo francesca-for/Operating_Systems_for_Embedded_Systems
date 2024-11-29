@@ -1,0 +1,74 @@
+build/machines/avr/arduino/cores/arduino/wiring_digital.c.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/wiring_digital.c \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/io.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/sfr_defs.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/inttypes.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/iom328p.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/portpins.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/common.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/version.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/fuse.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/lock.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/interrupt.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdio.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdarg.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdbool.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/string.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/math.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/pgmspace.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/binary.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/io.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/sfr_defs.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/inttypes.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/iom328p.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/portpins.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/common.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/version.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/fuse.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/lock.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/interrupt.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdio.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdarg.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdbool.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/string.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/math.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/pgmspace.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/binary.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h:

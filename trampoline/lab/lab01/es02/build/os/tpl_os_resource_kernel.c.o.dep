@@ -1,0 +1,74 @@
+build/os/tpl_os_resource_kernel.c.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_resource_kernel.c \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_resource_kernel.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_internal_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_os_std_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_custom_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_application_def.h \
+ ex2/tpl_app_define.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h \
+ ex2/tpl_app_custom_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_compiler.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_machine.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_custom_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_compiler.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_memmap.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/debug/tpl_dow.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_machine_interface.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_kernel.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_multicore_macros.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_definitions.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_error.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_types.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_errorhook.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_trace.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_timeobj_kernel.h
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_resource_kernel.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_internal_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_os_std_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_custom_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_application_def.h:
+
+ex2/tpl_app_define.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h:
+
+ex2/tpl_app_custom_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_compiler.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/tpl_machine.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_custom_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_compiler.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_memmap.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/debug/tpl_dow.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_machine_interface.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_kernel.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_multicore_macros.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_definitions.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_error.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_types.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_errorhook.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_trace.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_os_timeobj_kernel.h:

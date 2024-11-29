@@ -1,0 +1,17 @@
+build/machines/avr/arduino//tpl_trace.cpp.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino//tpl_trace.cpp \
+ ex2/tpl_app_define.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h
+
+ex2/tpl_app_define.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_def.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/os/tpl_config_check.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h:
