@@ -1,0 +1,54 @@
+OIL_VERSION = "2.5";
+
+CPU exercise1 {    
+    OS config {
+        STATUS = STANDARD;
+        BUILD = TRUE {
+            TRAMPOLINE_BASE_PATH = "/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline";
+            APP_NAME = "lab04ex2";
+            APP_SRC = "ex2.cpp";
+            CPPCOMPILER = "avr-g++";
+            COMPILER = "avr-gcc";
+            LINKER = "avr-gcc";
+            ASSEMBLER = "avr-gcc";
+            COPIER = "avr-objcopy";
+            SYSTEM = PYTHON;
+            LIBRARY = serial;
+        };
+        SYSTEM_CALL = TRUE;
+    };
+
+    APPMODE stdAppmode {};
+
+    ALARM alarmW_100 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskW; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 100; CYCLETIME = 100; };
+    };
+
+    ALARM alarmV_125 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskV; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 125; CYCLETIME = 125; };
+    };
+
+    RESOURCE GlobVar {
+        RESOURCEPROPERTY = STANDARD;
+    };
+
+    TASK TaskW {
+        PRIORITY = 2;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        RESOURCE = GlobVar;
+    };
+  
+    TASK TaskV {
+        PRIORITY = 1;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        RESOURCE = GlobVar;
+    };
+};

@@ -1,0 +1,35 @@
+OIL_VERSION = "2.5";
+
+CPU exercise1 {    
+    OS config {
+        STATUS = STANDARD;
+        BUILD = TRUE {
+            TRAMPOLINE_BASE_PATH = "/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline";
+            APP_NAME = "prova_exe";
+            APP_SRC = "prova.cpp";
+            CPPCOMPILER = "avr-g++";
+            COMPILER = "avr-gcc";
+            LINKER = "avr-gcc";
+            ASSEMBLER = "avr-gcc";
+            COPIER = "avr-objcopy";
+            SYSTEM = PYTHON;
+            LIBRARY = serial;
+        };
+        SYSTEM_CALL = TRUE;
+    };
+
+    APPMODE stdAppmode {};
+
+    ALARM alarmZ_25 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskZ; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 25; CYCLETIME = 25; };
+    };
+
+    TASK TaskZ {
+        PRIORITY = 1;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+    };
+};

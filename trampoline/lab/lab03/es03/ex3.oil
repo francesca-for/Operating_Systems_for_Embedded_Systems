@@ -1,0 +1,86 @@
+OIL_VERSION = "2.5";
+
+CPU exercise3 {    
+    OS config {
+        STATUS = STANDARD;
+        BUILD = TRUE {
+            TRAMPOLINE_BASE_PATH = "/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline";
+            APP_NAME = "lab03ex3";
+            APP_SRC = "ex3.cpp";
+            CPPCOMPILER = "avr-g++";
+            COMPILER = "avr-gcc";
+            LINKER = "avr-gcc";
+            ASSEMBLER = "avr-gcc";
+            COPIER = "avr-objcopy";
+            SYSTEM = PYTHON;
+            LIBRARY = serial;
+        };
+        SYSTEM_CALL = TRUE;
+    };
+
+    APPMODE stdAppmode {};
+  
+    ALARM alarmA_1000 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskA; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 1000; CYCLETIME = 1000; };
+    };
+
+    ALARM alarmB_1500 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskB; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 1500; CYCLETIME = 1500; };
+    };
+
+    ALARM alarmC_2800 {
+        COUNTER = SystemCounter;
+        ACTION = ACTIVATETASK { TASK = TaskC; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 2800; CYCLETIME = 2800; };
+    };
+
+    MESSAGE sent {
+        MESSAGEPROPERTY = SEND_STATIC_INTERNAL{
+            CDATATYPE = "int";
+        };
+    };
+
+    MESSAGE received {
+        MESSAGEPROPERTY = RECEIVE_QUEUED_INTERNAL {
+            SENDINGMESSAGE = sent;
+            QUEUESIZE = 1;
+        };
+    };
+
+    TASK Init {
+        PRIORITY = 4;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        MESSAGE = sent;
+    };
+
+    TASK TaskA {
+        PRIORITY = 3;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        MESSAGE = sent;
+        MESSAGE = received;
+    };
+
+    TASK TaskB {
+        PRIORITY = 2;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+    };
+  
+    TASK TaskC {
+        PRIORITY = 1;
+        AUTOSTART = TRUE { APPMODE = stdAppmode; };
+        ACTIVATION = 1;
+        SCHEDULE = FULL;
+        MESSAGE = sent;
+        MESSAGE = received;
+    };
+};
