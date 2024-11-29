@@ -1,0 +1,18 @@
+--- PATH ---
+
+export VIPER_PATH=/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/viper
+
+export GOIL_PATH=/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/goil/makefile-macosx/universal/goil
+
+export GOIL_TEMPL_PATH=/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/goil/templates
+
+
+
+--- PER COMPILARE (crea eseguibile o file da caricare come firmware) ---
+
+$GOIL_PATH --target=avr/arduino/uno --templates=$GOIL_TEMPL_PATH 'oilFile'
+$GOIL_PATH --target=posix/Darwin --templates=$GOIL_TEMPL_PATH 'oilFile'
+./make.py
+./build.py
+
+
