@@ -1,0 +1,94 @@
+OIL_VERSION = "2.5" : "test" ;
+
+CPU test {    
+  OS config {
+    STATUS = STANDARD;
+    BUILD = TRUE {
+      TRAMPOLINE_BASE_PATH = "/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline";
+      APP_NAME = "lab02ex1";
+      APP_SRC = "ex1.cpp";
+      CPPCOMPILER = "avr-g++";
+      COMPILER = "avr-gcc";
+      LINKER = "avr-gcc";
+      ASSEMBLER = "avr-gcc";
+      COPIER = "avr-objcopy";
+      SYSTEM = PYTHON;
+      LIBRARY = serial;
+    };
+    SYSTEM_CALL = TRUE;
+  };
+
+  APPMODE stdAppmode {};
+  
+  ALARM aTaskC_100ms {
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK { TASK = TaskC; };
+    AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 100; CYCLETIME = 100; };
+  };
+
+  ALARM aTaskM_500ms {
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK { TASK = TaskM; };
+    AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 500; CYCLETIME = 500; };
+  };
+
+  ALARM aTaskV_250ms {
+    COUNTER = SystemCounter;
+    ACTION = ACTIVATETASK { TASK = TaskV; };
+    AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 250; CYCLETIME = 250; };
+  };
+
+  MESSAGE from_C {
+    MESSAGEPROPERTY = SEND_STATIC_INTERNAL {
+      CDATATYPE = "int";
+    };
+  };
+
+  MESSAGE M_receive {
+    MESSAGEPROPERTY = RECEIVE_UNQUEUED_INTERNAL {
+      SENDINGMESSAGE = from_C;
+    };
+  };
+
+  MESSAGE from_M {
+    MESSAGEPROPERTY = SEND_STATIC_INTERNAL {
+      CDATATYPE = "int";
+    };
+  };
+
+  MESSAGE V_receive {
+    MESSAGEPROPERTY = RECEIVE_UNQUEUED_INTERNAL {
+      SENDINGMESSAGE = from_M;
+    };
+  };
+
+  TASK TaskV {
+    PRIORITY = 1;
+    AUTOSTART = TRUE { APPMODE = stdAppmode; };
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    MESSAGE = V_receive;
+  };
+
+  TASK TaskC {
+    PRIORITY = 3;
+    AUTOSTART = TRUE { APPMODE = stdAppmode; };
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    MESSAGE = from_C;
+  };
+  
+  TASK TaskM {
+    PRIORITY = 2;
+    AUTOSTART = TRUE { APPMODE = stdAppmode; };
+    ACTIVATION = 1;
+    SCHEDULE = FULL;
+    MESSAGE = from_M;
+    MESSAGE = M_receive;
+  };
+};
+
+
+
+
+
