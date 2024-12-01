@@ -1,4 +1,3 @@
-#include "math.h"
 #include "limits.h"
 #include "tpl_os.h"
 #include "tpl_com.h"
@@ -26,6 +25,9 @@ void setup(){
 TASK(TaskS) {
     int x = analogRead(A0);
     
+    Serial.print("-> ");  
+    Serial.println(x);
+
     GetResource(Q);
 
     if(nQ >= K)
@@ -59,7 +61,8 @@ TASK(TaskB) {
         if(queue[i]<min)
             min = queue[i];
     }
-    int diff= max-min;  // DEBUG
+    
+    int diff= max-min;  
     Serial.print("B: diff=");
     Serial.println(diff);
 
@@ -113,3 +116,44 @@ TASK(TaskV) {
 
     TerminateTask();
 }
+
+
+// TASK(TaskS) {
+//     // DEBUG
+//     int period = 100;
+//     static int act = 0;
+//     int x = millis();
+//     Serial.print("Sact ");
+//     Serial.println(act);
+//     Serial.print("Sstart ");
+//     Serial.println(x);
+//     act+=period;
+//     // END DEBUG 
+//     TerminateTask();
+// }
+// TASK(TaskB) {
+//     // DEBUG
+//     int period = 500;
+//     static int act = 0;
+//     int x = millis();
+//     Serial.print("Bact ");
+//     Serial.println(act);
+//     Serial.print("Bstart ");
+//     Serial.println(x);
+//     act+=period;
+//     // END DEBUG
+//     TerminateTask();
+// }
+// TASK(TaskV) {
+//     // DEBUG
+//     // int period = 125;
+//     // static int act = 0;
+//     // int x = millis();
+//     // Serial.print("Vact ");
+//     // Serial.println(act);
+//     // Serial.print("Vstart ");
+//     // Serial.println(x);
+//     // act+=period;
+//     // END DEBUG
+//     TerminateTask();
+// }
