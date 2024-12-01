@@ -1,0 +1,75 @@
+<circuit version="1.1.0-SR1" rev="2005" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="WaveGen" CircId="WaveGen-2" mainComp="false" Show_id="true" Show_Val="true" Pos="-784,-508" rotation="180" hflip="1" vflip="1" label="sin f0&#x3D20pi" idLabPos="7.95547,-9.95547" labelrot="-180" valLabPos="-16,8" valLabRot="-180" Out="true" Running="true" Wave_Type="0" Freq="62.832 Hz" Phase="90 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.25 V" Mid_Volt="2.5 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-4" mainComp="false" Show_id="true" Show_Val="true" Pos="-784,-468" rotation="-180" hflip="1" vflip="1" label="tri T&#x3D0.2" idLabPos="8.63361,-8" labelrot="-180" valLabPos="-16,8" valLabRot="-180" Out="true" Running="true" Wave_Type="Triangle" Freq="5 Hz" Phase="-2.865 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="-2.25 V" Mid_Volt="2.5 V" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-6" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="-772,-732" rotation="0" hflip="-1" vflip="1" label="Voltage Source-6" idLabPos="-40,-80" labelrot="0" valLabPos="-4.06482,31.9352" valLabRot="0" Running="true" Value_Volt="3.785 V" MaxValue="5 V" MinValue="0 V" />
+
+<item itemtype="Subcircuit" CircId="Uno-7" mainComp="false" Show_id="true" Show_Val="false" Pos="-1100,-772" rotation="0" hflip="1" vflip="1" label="Uno-7" idLabPos="7.51514,-3.60334" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="es01/lab04ex1.hex" Auto_Load="false" saveEepr="true" MainMcu="true" SerialMon="-1" />
+</item>
+
+<item itemtype="WaveGen" CircId="WaveGen-16" mainComp="false" Show_id="true" Show_Val="true" Pos="-784,-628" rotation="180" hflip="1" vflip="1" label="sin f0&#x3D10pi" idLabPos="16.1538,-9.95547" labelrot="-180" valLabPos="-16,8" valLabRot="-180" Out="true" Running="true" Wave_Type="Sine" Freq="31.416 Hz" Phase="90 _º" Steps="600 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.25 V" Mid_Volt="2.5 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-22" mainComp="false" Show_id="true" Show_Val="true" Pos="-784,-588" rotation="-180" hflip="1" vflip="1" label="sin f0&#x3D4 p&#x3D60" idLabPos="21.6143,-9.36639" labelrot="-180" valLabPos="-16,8" valLabRot="-180" Out="true" Running="true" Wave_Type="Sine" Freq="25.133 Hz" Phase="60 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="-2.25 V" Mid_Volt="2.5 V" />
+
+<item itemtype="WaveGen" CircId="WaveGen-25" mainComp="false" Show_id="true" Show_Val="true" Pos="-784,-668" rotation="-180" hflip="1" vflip="1" label="square T&#x3D3.37" idLabPos="20.2479,-8.68319" labelrot="-180" valLabPos="-16,8" valLabRot="-180" Out="true" Running="true" Wave_Type="Square" Freq="2.9674 Hz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="-2.25 V" Mid_Volt="2.5 V" />
+
+<item itemtype="Switch" CircId="Switch-9" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-716" rotation="0" hflip="1" vflip="1" label="Switch-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-11" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-508" rotation="0" hflip="1" vflip="1" label="Switch-11" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-12" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-628" rotation="0" hflip="1" vflip="1" label="Switch-12" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-19" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-468" rotation="0" hflip="1" vflip="1" label="Switch-19" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-668" rotation="0" hflip="1" vflip="1" label="Switch-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Switch" CircId="Switch-38" mainComp="false" Show_id="false" Show_Val="false" Pos="-848,-588" rotation="0" hflip="1" vflip="1" label="Switch-38" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="-908,-716" />
+
+<item itemtype="Node" CircId="Node-29" mainComp="false" Pos="-908,-668" />
+
+<item itemtype="Node" CircId="Node-32" mainComp="false" Pos="-908,-508" />
+
+<item itemtype="Node" CircId="Node-33" mainComp="false" Pos="-908,-628" />
+
+<item itemtype="Node" CircId="Node-39" mainComp="false" Pos="-908,-588" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Switch-9-switch0pinN" endpinid="Voltage Source-6-outPin" pointList="-832,-716,-800,-716" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Switch-11-switch0pinN" endpinid="WaveGen-2-outnod" pointList="-832,-508,-800,-508" />
+
+<item itemtype="Connector" uid="Connector-37" startpinid="Switch-12-switch0pinN" endpinid="WaveGen-16-outnod" pointList="-832,-628,-800,-628" />
+
+<item itemtype="Connector" uid="Connector-38" startpinid="Switch-19-switch0pinN" endpinid="WaveGen-4-outnod" pointList="-832,-468,-800,-468" />
+
+<item itemtype="Connector" uid="Connector-47" startpinid="Switch-24-switch0pinN" endpinid="WaveGen-25-outnod" pointList="-832,-668,-800,-668" />
+
+<item itemtype="Connector" uid="Connector-61" startpinid="Uno-7-A0" endpinid="Node-28-0" pointList="-948,-716,-908,-716" />
+
+<item itemtype="Connector" uid="Connector-62" startpinid="Node-28-2" endpinid="Switch-9-pinP0" pointList="-908,-716,-864,-716" />
+
+<item itemtype="Connector" uid="Connector-64" startpinid="Switch-24-pinP0" endpinid="Node-29-0" pointList="-864,-668,-908,-668" />
+
+<item itemtype="Connector" uid="Connector-65" startpinid="Node-29-2" endpinid="Node-28-1" pointList="-908,-668,-908,-716" />
+
+<item itemtype="Connector" uid="Connector-72" startpinid="Switch-19-pinP0" endpinid="Node-32-1" pointList="-864,-468,-908,-468,-908,-508" />
+
+<item itemtype="Connector" uid="Connector-73" startpinid="Switch-11-pinP0" endpinid="Node-32-0" pointList="-864,-508,-908,-508" />
+
+<item itemtype="Connector" uid="Connector-77" startpinid="Switch-12-pinP0" endpinid="Node-33-1" pointList="-864,-628,-908,-628" />
+
+<item itemtype="Connector" uid="Connector-79" startpinid="Node-33-2" endpinid="Node-29-1" pointList="-908,-628,-908,-668" />
+
+<item itemtype="Connector" uid="Connector-97" startpinid="WaveGen-22-outnod" endpinid="Switch-38-switch0pinN" pointList="-800,-588,-832,-588" />
+
+<item itemtype="Connector" uid="Connector-99" startpinid="Switch-38-pinP0" endpinid="Node-39-1" pointList="-864,-588,-908,-588" />
+
+<item itemtype="Connector" uid="Connector-100" startpinid="Node-32-2" endpinid="Node-39-0" pointList="-908,-508,-908,-588" />
+
+<item itemtype="Connector" uid="Connector-101" startpinid="Node-39-2" endpinid="Node-33-0" pointList="-908,-588,-908,-628" />
+
+</circuit>

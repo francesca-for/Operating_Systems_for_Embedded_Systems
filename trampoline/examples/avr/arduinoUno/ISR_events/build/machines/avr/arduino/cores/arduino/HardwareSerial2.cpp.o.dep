@@ -1,0 +1,110 @@
+build/machines/avr/arduino/cores/arduino/HardwareSerial2.cpp.o: \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial2.cpp \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Arduino.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdbool.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/string.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/math.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/pgmspace.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/inttypes.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/io.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/sfr_defs.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/iom328p.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/portpins.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/common.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/version.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/fuse.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/lock.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/interrupt.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/binary.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/WCharacter.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/ctype.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/WString.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Stream.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Print.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdio.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdarg.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Printable.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/USBAPI.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/eeprom.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/util/delay.h \
+ /opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/util/delay_basic.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial_private.h \
+ /Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Arduino.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdlib.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stddef.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdbool.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/string.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/math.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/pgmspace.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/inttypes.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdint.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdint.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/io.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/sfr_defs.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/iom328p.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/portpins.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/common.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/version.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/fuse.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/lock.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/interrupt.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/binary.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/WCharacter.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/ctype.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/WString.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Stream.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Print.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/stdio.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/lib/avr-gcc/9/gcc/avr/9.4.0/include/stdarg.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/Printable.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/USBAPI.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/avr/eeprom.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/util/delay.h:
+
+/opt/homebrew/Cellar/avr-gcc@9/9.4.0_1/avr/include/util/delay_basic.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/variants/standard/pins_arduino.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/HardwareSerial_private.h:
+
+/Users/francescafornasier/github/Operating_Systems_for_Embedded_Systems/trampoline/machines/avr/arduino/cores/arduino/wiring_private.h:
