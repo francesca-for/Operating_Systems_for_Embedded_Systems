@@ -6,8 +6,7 @@
 DeclareAlarm(alarmS_100);
 DeclareAlarm(alarmB_500);
 DeclareAlarm(alarmV_125);
-DeclareResource(Q);
-DeclareResource(GlobVar);
+DeclareResource(Res);
 
 const int K = 5;
 int queue[K];
@@ -28,16 +27,12 @@ TASK(TaskS) {
     Serial.print("-> ");  
     Serial.println(x);
 
-    GetResource(Q);
+    GetResource(Res);
 
     if(nQ >= K)
         Serial.println("Queue is full");
     else
         queue[nQ++] = x;
-
-    ReleaseResource(Q);
-
-    GetResource(GlobVar);
 
     if(x<10 || x>1013)
         error = 1;
@@ -45,7 +40,7 @@ TASK(TaskS) {
     Serial.print("S: err=");
     Serial.println(error);
 
-    ReleaseResource(GlobVar);
+    ReleaseResource(Res);
 
     TerminateTask();
 }
@@ -53,7 +48,7 @@ TASK(TaskS) {
 TASK(TaskB) {
     int min = INT_MAX, max = 0;
 
-    GetResource(Q);
+    GetResource(Res);
 
     for(int i=0; i<nQ; i++){  // find min and max
         if(queue[i]>max)
@@ -66,8 +61,6 @@ TASK(TaskB) {
     Serial.print("B: diff=");
     Serial.println(diff);
 
-    GetResource(GlobVar);
-
     if(max-min > 500)  // determine value of alarm
         alarm = 1;
     else alarm = 0;
@@ -75,10 +68,8 @@ TASK(TaskB) {
     Serial.print("B: alarm=");
     Serial.println(alarm);
 
-    ReleaseResource(GlobVar);
-
     nQ = 0;  // reset of the queue
-    ReleaseResource(Q);
+    ReleaseResource(Res);
 
     TerminateTask();
 }
@@ -87,7 +78,7 @@ TASK(TaskV) {
     int state = digitalRead(13);
     static int cnt = 0;
 
-    GetResource(GlobVar);
+    GetResource(Res);
 
     if(error == 1) {  // blink fast
         Serial.println("V: fast");
@@ -112,7 +103,7 @@ TASK(TaskV) {
         }
     }
 
-    ReleaseResource(GlobVar);
+    ReleaseResource(Res);
 
     TerminateTask();
 }

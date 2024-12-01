@@ -23,36 +23,41 @@ CPU exercise1 {
     ALARM alarmS_100 {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskS; };
-        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 100; CYCLETIME = 100; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 98; CYCLETIME = 98; }; // 97.66 ticks = 100 ms
     };
 
     ALARM alarmB_500 {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskB; };
-        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 500; CYCLETIME = 500; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 488; CYCLETIME = 488; }; // 488.28 ticks = 500 ms
     };
 
     ALARM alarmV_125 {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskV; };
-        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 125; CYCLETIME = 125; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 122; CYCLETIME = 122; }; // 122.07 ticks = 125 ms
     };
 
-    RESOURCE Q {
+    RESOURCE Res {
         RESOURCEPROPERTY = STANDARD;
     };
 
-    RESOURCE GlobVar {
-        RESOURCEPROPERTY = STANDARD;
-    };
+    //RESOURCE Q {
+    //    RESOURCEPROPERTY = STANDARD;
+    //};
+
+    //RESOURCE GlobVar {
+    //    RESOURCEPROPERTY = STANDARD;
+    //};
 
     TASK TaskS {
         PRIORITY = 3;
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
         SCHEDULE = FULL;
-        RESOURCE = Q;
-        RESOURCE = GlobVar;
+        RESOURCE = Res;
+        // RESOURCE = Q;
+        // RESOURCE = GlobVar;
     };
 
     TASK TaskB {
@@ -60,8 +65,9 @@ CPU exercise1 {
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
         SCHEDULE = FULL;
-        RESOURCE = Q;
-        RESOURCE = GlobVar;
+        RESOURCE = Res;
+        // RESOURCE = Q;
+        // RESOURCE = GlobVar;
     };
   
     TASK TaskV {
@@ -69,6 +75,7 @@ CPU exercise1 {
         AUTOSTART = TRUE { APPMODE = stdAppmode; };
         ACTIVATION = 1;
         SCHEDULE = FULL;
-        RESOURCE = GlobVar;
+        RESOURCE = Res;
+        // RESOURCE = GlobVar;
     };
 };
