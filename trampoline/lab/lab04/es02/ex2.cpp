@@ -1,4 +1,3 @@
-#include "math.h"
 #include "limits.h"
 #include "tpl_os.h"
 #include "tpl_com.h"
@@ -27,6 +26,11 @@ TASK(TaskW) {
     Serial.print("-> ");  
     Serial.println(x);
 
+    if(x > max)
+        max = x;
+    if(x < min)
+        min = x;
+
     GetResource(GlobVar);
     
     if(x<10 || x>1013)
@@ -34,11 +38,6 @@ TASK(TaskW) {
     else error = 0;
     Serial.print("err = ");
     Serial.println(error);
-
-    if(x > max)
-        max = x;
-    if(x < min)
-        min = x;
 
     if(cnt == 4){
         diff = max-min;
@@ -54,7 +53,6 @@ TASK(TaskW) {
         min = INT_MAX;
         max = 0;
     }
-
     cnt++;
 
     ReleaseResource(GlobVar);
