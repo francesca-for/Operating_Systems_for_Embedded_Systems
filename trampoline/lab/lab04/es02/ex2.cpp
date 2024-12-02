@@ -8,8 +8,6 @@ DeclareAlarm(alarmW_100);
 DeclareAlarm(alarmV_125);
 DeclareResource(GlobVar);
 
-const int K = 5;
-int queue[K];
 int error = 0;
 int alarm = 0;
 
@@ -26,12 +24,15 @@ TASK(TaskW) {
     int diff;
     int x = analogRead(A0);
 
+    Serial.print("-> ");  
+    Serial.println(x);
+
     GetResource(GlobVar);
     
     if(x<10 || x>1013)
         error = 1;
     else error = 0;
-    Serial.print("error = ");
+    Serial.print("err = ");
     Serial.println(error);
 
     if(x > max)
@@ -68,14 +69,14 @@ TASK(TaskV) {
     GetResource(GlobVar);
 
     if(error == 1) {  // blink fast
-        Serial.println("V: fast");
+        Serial.println("led: fast");
         cnt = 0;  // reset for next time the led has to blink slowly
         state = !state;
         digitalWrite(13, state);
     }
     else{
         if(alarm == 1){  // blink slow, 1 change every 4 executions
-            Serial.println("V: slow");
+            Serial.println("led: slow");
             if(cnt == 0){
                 state = !state;
                 digitalWrite(13, state);
@@ -84,7 +85,7 @@ TASK(TaskV) {
             cnt = cnt%4;
         }
         else {  // always off
-            Serial.println("V: off");
+            Serial.println("led: off");
             cnt = 0;
             digitalWrite(13, LOW);
         }
