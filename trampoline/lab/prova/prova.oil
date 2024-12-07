@@ -1,6 +1,6 @@
 OIL_VERSION = "2.5";
 
-CPU exercise1 {    
+CPU exercise {    
     OS config {
         STATUS = STANDARD;
         BUILD = TRUE {
@@ -23,7 +23,7 @@ CPU exercise1 {
     ALARM alarmZ_25 {
         COUNTER = SystemCounter;
         ACTION = ACTIVATETASK { TASK = TaskZ; };
-        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 25; CYCLETIME = 25; };
+        AUTOSTART = TRUE { APPMODE = stdAppmode; ALARMTIME = 24; CYCLETIME = 24; };  // 24 ticks = 25 ms
     };
 
     TASK TaskZ {

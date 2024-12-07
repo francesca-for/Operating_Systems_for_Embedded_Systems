@@ -1,4 +1,3 @@
-#include "limits.h"
 #include "tpl_os.h"
 #include "tpl_com.h"
 #include "Arduino.h"
@@ -46,7 +45,7 @@ TASK(TaskS) {
 }
 
 TASK(TaskB) {
-    int min = INT_MAX, max = 0;
+    int min = 1023, max = 0;
 
     GetResource(Res);
 
@@ -61,7 +60,7 @@ TASK(TaskB) {
     Serial.print("B: diff=");
     Serial.println(diff);
 
-    if(max-min > 500)  // determine value of alarm
+    if(diff > 500)  // determine value of alarm
         alarm = 1;
     else alarm = 0;
 
@@ -107,44 +106,3 @@ TASK(TaskV) {
 
     TerminateTask();
 }
-
-
-// TASK(TaskS) {
-//     // DEBUG
-//     int period = 100;
-//     static int act = 0;
-//     int x = millis();
-//     Serial.print("Sact ");
-//     Serial.println(act);
-//     Serial.print("Sstart ");
-//     Serial.println(x);
-//     act+=period;
-//     // END DEBUG 
-//     TerminateTask();
-// }
-// TASK(TaskB) {
-//     // DEBUG
-//     int period = 500;
-//     static int act = 0;
-//     int x = millis();
-//     Serial.print("Bact ");
-//     Serial.println(act);
-//     Serial.print("Bstart ");
-//     Serial.println(x);
-//     act+=period;
-//     // END DEBUG
-//     TerminateTask();
-// }
-// TASK(TaskV) {
-//     // DEBUG
-//     // int period = 125;
-//     // static int act = 0;
-//     // int x = millis();
-//     // Serial.print("Vact ");
-//     // Serial.println(act);
-//     // Serial.print("Vstart ");
-//     // Serial.println(x);
-//     // act+=period;
-//     // END DEBUG
-//     TerminateTask();
-// }

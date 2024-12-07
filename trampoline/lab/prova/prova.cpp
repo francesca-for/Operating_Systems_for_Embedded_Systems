@@ -1,5 +1,3 @@
-#include "math.h"
-#include "limits.h"
 #include "tpl_os.h"
 #include "tpl_com.h"
 #include "Arduino.h"
@@ -14,23 +12,28 @@ void setup(){
 }
 
 TASK(TaskZ) {
-    int error = 0;
-    int alarm = 0;
+    static int error = 0;
+    static int alarm = 0;
     static int cntSample = 0;  // contatore mod 4
     static int cntCalc = 0;  // contatore mod 20
     static int cntLed = 0;  // contatore modulo 5
     static int cntBlink = 0;  // per far lampeggiare il led lentamente
-    static int min = INT_MAX, max = 0;
+    static int min = 1023, max = 0;
+    int x;
     int diff;
     int state;
 
     if(cntSample==0) {
-        int x = analogRead(A0);
+        x = analogRead(A0);
+
+        Serial.print("-> ");  
+        Serial.println(x);
 
         if(x<10 || x>1013)
             error = 1;
-        else error = 0;
-        Serial.print("error = ");
+        else 
+            error = 0;
+        Serial.print("err = ");
         Serial.println(error);
 
         if(x > max)
@@ -39,7 +42,7 @@ TASK(TaskZ) {
             min = x;
     }
 
-    if(cntCalc == 19){  // diff solo se ho campionato 20 valori
+    if(cntCalc == 19){  // diff only if we sampled 5 values -> 20 executions of W
         diff = max-min;
         Serial.print("diff = ");
         Serial.println(diff);
@@ -50,19 +53,18 @@ TASK(TaskZ) {
         Serial.println(alarm);
 
         cntCalc=0;  // reset counter and min/max value
-        min = INT_MAX;
+        min = 1023;
         max = 0;
     }
 
-    if(cntLed == 0) {
+    if(cntLed == 0) {  // task executes every 25 ms, led changes every 5 executions
         state = digitalRead(13);
         if(error == 1) {  // blink fast
             Serial.println("led fast");
             state = !state;
             digitalWrite(13, state);
             cntBlink = 0;
-        }
-        else{
+        } else{
             if(alarm == 1){  // blink slow, 1 change every 4 executions
                 Serial.println("led slow");
                 if(cntBlink == 0){

@@ -1,4 +1,3 @@
-#include "limits.h"
 #include "tpl_os.h"
 #include "tpl_com.h"
 #include "Arduino.h"
@@ -19,7 +18,7 @@ void setup(){
 
 TASK(TaskW) {
     static int cnt = 0;  // contatore modulo 5
-    static int min = INT_MAX, max = 0;
+    static int min = 1023, max = 0;
     int diff;
     int x = analogRead(A0);
 
@@ -50,10 +49,10 @@ TASK(TaskW) {
         Serial.println(alarm);
 
         cnt=0;  // reset counter and min/max value
-        min = INT_MAX;
+        min = 1023;
         max = 0;
     }
-    cnt++;
+    else cnt++;
 
     ReleaseResource(GlobVar);
     

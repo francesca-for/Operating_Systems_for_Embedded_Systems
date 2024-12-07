@@ -1,6 +1,6 @@
 OIL_VERSION = "2.5";
 
-CPU exercise1 {    
+CPU exercise {    
     OS config {
         STATUS = STANDARD;
         BUILD = TRUE {
